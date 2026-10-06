@@ -1,0 +1,87 @@
+In anwesha.bose2021@gmail.com mongodb,
+
+Organisation Name:- Anwesha's Org - 2025-07-01
+
+Project name:- ecom-own
+
+Cluster name:- ecom-own-cluster
+anweshabose2021_db_user
+2nEegF0mvFKv4Pe3
+
+python -m pip install "pymongo[srv]"
+
+mongodb+srv://anweshabose2021_db_user:<db_password>@ecom-own-cluster.rjwub7m.mongodb.net/?appName=ecom-own-cluster
+
+==========
+In AWS Amazon cloud console,
+
+Account ID:- 007661083249
+Account Name:- anweshabose
+Email:- anwesha.bose2021@gmail.com
+Password:- Guitar44079911454@
+==========
+Digilicker,
+
+username:- anwesha_b_
+PIN:- 440799
+==========
+
+AWS S3 Bucket,
+Bucket name:- flipkart-images-anwesha
+==========
+PS D:\own_practice\Flipkart1> pip install uv
+Requirement already satisfied: uv in c:\users\anwesha\anaconda3\lib\site-packages (0.8.17)
+PS D:\own_practice\Flipkart1> uv venv ecom-own
+Using CPython 3.13.7
+Creating virtual environment at: ecom-own
+Activate with: ecom-own\Scripts\activate
+PS D:\own_practice\Flipkart1> ecom-own\Scripts\activate
+(ecom-own) PS D:\own_practice\Flipkart1> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& d:\own_practice\Flipkart1\ecom-own\Scripts\Activate.ps1)
+(ecom-own) PS D:\own_practice\Flipkart1> uv pip install ipykernel
+(ecom-own) PS D:\own_practice\Flipkart1> uv pip install pymongo[srv]
+
+
+===
+
+
+Microsoft Windows [Version 10.0.26200.8875]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\own_practice\Flipkart1>d:\own_practice\Flipkart1\ecom-own\Scripts\activate.bat
+
+(ecom-own) D:\own_practice\Flipkart1>uvicorn main:app --reload
+
+==> http://127.0.0.1:8000/docs
+
+
+If all API works properly, connect backend with frontend
+npm create vite@latest Frontend
+
+
+◇  Package name:
+│  frontend
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Which linter to use?
+│  Oxlint
+│
+◇  Install with npm and start now?
+│  Yes
+
+(ecom-own) D:\own_practice\Flipkart1\Frontend>npm install
+(ecom-own) D:\own_practice\Flipkart1\Frontend>npm install axios
+(ecom-own) D:\own_practice\Flipkart1\Frontend>npm run dev
+(ecom-own) D:\own_practice\Flipkart1\Frontend>npm install react-router-dom
+(ecom-own) D:\own_practice\Flipkart1\Frontend>npm install bootstrap
+
+(ecom-own) PS D:\own_practice\Flipkart1> uvicorn main:app --reload (Backend will run)
+(ecom-own) PS D:\own_practice\Flipkart1\Frontend> npm run dev (Frontend will run)
+
+Let App.jsx keep track of the selected category, then pass that category down to ProductHome.
+
+PS D:\own_practice\Flipkart1> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& d:\own_practice\Flipkart1\ecom-own\Scripts\Activate.ps1)

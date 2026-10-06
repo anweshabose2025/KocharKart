@@ -1,0 +1,132 @@
+/* Navbar.css */
+
+/* Ensure the navbar has decent padding */
+.navbar {
+  padding: 0.75rem 1rem;
+  height: 70px;
+  background-color: #24211f;
+}
+
+/* Constrain the logo height to keep the navbar slim */
+.nav-logo {
+  height: 50px; /* Adjust based on your visual preference */
+  width: 175px;
+  margin-right: 1rem;
+}
+
+/* SEARCH FORM CUSTOMIZATION */
+/* mx-auto in JS centers it, but we give it a flexible width */
+.search-form {
+  width: 100%;
+  max-width: 500px; /* Limits width on large screens, matching image */
+}
+
+/* Styling the input field to match the mock-up */
+.search-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.2s;
+}
+
+.search-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-form .form-control:focus {
+  background-color: white;
+  color: #333;
+  box-shadow: none;
+  border-color: #fca311; /* Matching image orange accent */
+}
+
+/* Styling the search button */
+.search-btn {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.search-btn:hover {
+  background-color: #fca311; /* Accenting button on hover */
+  border-color: #fca311;
+  color: white;
+}
+
+
+/* ACTION ICONS (User, Heart, Cart) */
+/* gap-3 provides even spacing on desktop */
+.action-icons .nav-link svg {
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.85;
+}
+
+.action-icons .nav-link:hover svg {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Cart Badge adjustment */
+.cart-badge {
+  font-size: 0.65rem;
+  padding: 0.3em 0.5em;
+  transform: translate(-30%, -40%) !important; /* Fine-tune position */
+}
+
+
+/* RESPONSIVE FIXES */
+@media (max-width: 991.98px) {
+  /* On mobile, stack items evenly */
+  .search-form {
+    margin: 1rem 0; /* Add space above/below search */
+    width: 100%;
+  }
+
+  /* Center the action icons when collapsed */
+  .action-icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.navbar-location {
+    display: flex;
+    gap: 8px;
+    color: white;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.navbar-location > i {
+    font-size: 24px;
+}
+
+.navbar-location small {
+    display: block;
+    font-size: 11px;
+    color: #bdbdbd;
+}
+
+.navbar-location div div {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar-location:hover {
+    color: #ff8c00;
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.account-user-name {
+  color: #fca311;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}

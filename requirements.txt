@@ -1,0 +1,7 @@
+ipykernel
+pymongo[srv]
+python-dotenv
+pydantic
+fastapi
+langchain_groq
+pydantic_ai

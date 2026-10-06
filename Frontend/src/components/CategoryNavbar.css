@@ -1,0 +1,42 @@
+.category-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    background-color: #12112e;
+}
+
+.category-button {
+    border: none;
+
+    background: transparent;
+
+    padding: 8px 15px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #fffdfd;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+.category-button:hover {
+    color: #ff6b00;
+}
+
+.category-button.active {
+    color: #ff6904;
+    font-weight: bold;
+    border-bottom: 3px solid #ff6904;
+}
