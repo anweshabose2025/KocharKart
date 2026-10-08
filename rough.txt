@@ -5,25 +5,14 @@ Organisation Name:- Anwesha's Org - 2025-07-01
 Project name:- ecom-own
 
 Cluster name:- ecom-own-cluster
-anweshabose2021_db_user
-2nEegF0mvFKv4Pe3
+
 
 python -m pip install "pymongo[srv]"
 
 mongodb+srv://anweshabose2021_db_user:<db_password>@ecom-own-cluster.rjwub7m.mongodb.net/?appName=ecom-own-cluster
 
 ==========
-In AWS Amazon cloud console,
 
-Account ID:- 007661083249
-Account Name:- anweshabose
-Email:- anwesha.bose2021@gmail.com
-Password:- Guitar44079911454@
-==========
-Digilicker,
-
-username:- anwesha_b_
-PIN:- 440799
 ==========
 
 AWS S3 Bucket,
