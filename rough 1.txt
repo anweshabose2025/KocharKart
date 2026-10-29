@@ -1,0 +1,70 @@
+PS D:\own_practice> git clone https://github.com/anweshabose2025/KocharKart.git
+Cloning into 'KocharKart'...
+remote: Enumerating objects: 91, done.
+remote: Counting objects: 100% (91/91), done.
+remote: Compressing objects: 100% (84/84), done.
+remote: Total 91 (delta 4), reused 91 (delta 4), pack-reused 0 (from 0)
+Receiving objects: 100% (91/91), 4.47 MiB | 3.07 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+PS D:\own_practice> cd KocharKart
+PS D:\own_practice\KocharKart> dir
+
+
+    Directory: D:\own_practice\KocharKart
+
+
+Mode                 LastWriteTime         Length Name                                                                                            
+----                 -------------         ------ ----                                                                                            
+d-----        07-10-2026     23:36                Backend                                                                                         
+d-----        07-10-2026     23:36                experiments                                                                                     
+d-----        07-10-2026     23:36                flipkart-images-AWS                                                                             
+d-----        07-10-2026     23:36                Frontend                                                                                        
+-a----        07-10-2026     23:36            105 .env.example                                                                                    
+-a----        07-10-2026     23:36             80 .gitignore                                                                                      
+-a----        07-10-2026     23:36            736 main.py                                                                                         
+-a----        07-10-2026     23:36          12172 package-lock.json                                                                               
+-a----        07-10-2026     23:36             56 package.json                                                                                    
+-a----        07-10-2026     23:36             86 requirements.txt                                                                                
+-a----        07-10-2026     23:36           2698 rough.txt                                                                                       
+
+
+=> Changed .env.example to .env => and copy-pasted everything from actual .env
+
+
+PS D:\own_practice\KocharKart> uv venv ecom-own
+Using CPython 3.13.7
+Creating virtual environment at: ecom-own
+Activate with: ecom-own\Scripts\activate
+PS D:\own_practice\KocharKart> ecom-own\Scripts\activate
+(ecom-own) PS D:\own_practice\KocharKart> pip install -r requirements.txt
+(ecom-own) PS D:\own_practice\KocharKart> cd Frontend
+(ecom-own) PS D:\own_practice\KocharKart\Frontend> npm install
+(ecom-own) PS D:\own_practice\KocharKart\Frontend> npm run dev (to run Frontend)
+
+<== Another Terminal ==> 
+PS D:\own_practice> cd KocharKart (to run Backend)           
+PS D:\own_practice\KocharKart> ecom-own\Scripts\activate      
+(ecom-own) PS D:\own_practice\KocharKart> uvicorn main:app --reload
+
+===
+
+(ecom-own) PS D:\own_practice\KocharKart> python -m ensurepip --upgrade
+Looking in links: c:\Users\Anwesha\AppData\Local\Temp\tmpmrfxd1o_
+Processing c:\users\anwesha\appdata\local\temp\tmpmrfxd1o_\pip-25.2-py3-none-any.whl
+Installing collected packages: pip
+Successfully installed pip-25.2
+(ecom-own) PS D:\own_practice\KocharKart> python -m pip --version
+pip 25.2 from D:\own_practice\KocharKart\ecom-own\Lib\site-packages\pip (python 3.13)
+(ecom-own) PS D:\own_practice\KocharKart> python -m pip install --upgrade pip
+Requirement already satisfied: pip in d:\own_practice\kocharkart\ecom-own\lib\site-packages (25.2)
+Collecting pip
+  Downloading pip-26.
+(ecom-own) PS D:\own_practice\KocharKart> python -m pip install -r requirements.txt
+(ecom-own) PS D:\own_practice\KocharKart> python -m uvicorn --version
+Running uvicorn 0.54.0 with CPython 3.13.7 on Windows
+(ecom-own) PS D:\own_practice\KocharKart> python -m uvicorn main:app
+INFO:     Started server process [508]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+=====================
